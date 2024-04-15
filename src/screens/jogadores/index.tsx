@@ -3,7 +3,6 @@ import { View, FlatList, TouchableOpacity } from "react-native";
 import Card, { CadastroProps } from "../../components/card";
 import AsyncStorage from "@react-native-async-storage/async-storage";
 import { useFocusEffect } from "@react-navigation/native";
-import { SearchIcon, Input } from "native-base";
 
 import { styles } from "./styles";
 
@@ -13,7 +12,6 @@ interface Props {
 
 export default function Contas({ navigation }: Props) {
   const [data, setData] = useState<CadastroProps[]>([]);
-  const [search, setSearch] = useState("");
 
   function handleEdit(id: any) {
     navigation.navigate("Cadastro", { id: id });
@@ -42,7 +40,6 @@ export default function Contas({ navigation }: Props) {
 
   return (
     <View style={styles.container}>
-  
       <FlatList
         data={data}
         keyExtractor={(item) => item.id}

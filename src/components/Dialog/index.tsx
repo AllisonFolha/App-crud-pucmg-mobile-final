@@ -1,6 +1,5 @@
 // ExcluirItemDialog.tsx
 
-import { background } from "native-base/lib/typescript/theme/styled-system";
 import React from "react";
 import { Button, HStack, Text, VStack } from "native-base";
 
@@ -23,19 +22,10 @@ export const ExcluirItemDialog: React.FC<ExcluirItemDialogProps> = ({
         Deseja realmente excluir este item?
       </Text>
       <HStack space={3} justifyContent="center">
-        <Button
-          shadow={3}
-          bgColor={"#FCA53A"}
-          onPress={onCancel}
-        >
+        <Button shadow={3} bgColor={"#FCA53A"} onPress={onCancel}>
           Cancelar
         </Button>
-        <Button
-          rounded="md"
-          shadow={3}
-          bgColor={"#FC3F3A"}
-          onPress={onConfirm}
-        >
+        <Button rounded="md" shadow={3} bgColor={"#FC3F3A"} onPress={onConfirm}>
           Confirmar
         </Button>
       </HStack>

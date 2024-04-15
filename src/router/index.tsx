@@ -3,7 +3,7 @@ import { DefaultTheme } from "@react-navigation/native";
 import { createBottomTabNavigator } from "@react-navigation/bottom-tabs";
 import { MaterialCommunityIcons } from "@expo/vector-icons";
 import { Cadastro } from "../screens/cadastro";
-import  Jogadores  from "../screens/jogadores";
+import Jogadores from "../screens/jogadores";
 
 export type RootTabParamList = {
   Cadastro: { id: string };
