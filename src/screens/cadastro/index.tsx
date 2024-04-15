@@ -258,10 +258,6 @@ export const Cadastro = ({route, navigation}: CadastroRouterProp ) =>{
     return formattedCep;
   };
 
-  function handleList(){
-    navigation.navigate('Jogadores');
-  }
-
 
   return (
     <KeyboardAwareScrollView style={styles.container}>

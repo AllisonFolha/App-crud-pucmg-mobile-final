@@ -3,6 +3,7 @@ import "react-native-gesture-handler";
 import { NativeBaseProvider, Box } from "native-base";
 
 import { Routes } from "./src/router";
+import React from "react";
 
 const MyTheme = {
   ...DefaultTheme,
